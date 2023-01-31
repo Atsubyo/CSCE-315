@@ -1,0 +1,84 @@
+@import url("https;//fonts.googleapis.co/css2family=Poppins:weght@400;500;600;700&dsplay=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.app {
+  display: flex;
+  min-height: 100vh;
+  background: #fffee8;
+}
+.sidebar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  background: #e6e5da;
+  width: 65px;
+  overflow: hidden;
+  transition: width 0.3s linear;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+}
+.sidebar-item {
+  text-align: center;
+  display: flex;
+  transition: all 0.5s ease;
+}
+.sidebar-item img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.sidebar-item span {
+  font-weight: bold;
+  padding: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.sidebar-item-active {
+  text-align: center;
+  display: flex;
+  transition: all 0.5s ease;
+}
+.sidebar-item-active img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.sidebar-item-active span {
+  font-weight: bold;
+  padding: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+a {
+  position: relative;
+  color: rgb(85, 83, 83);
+  font-size: 14px;
+  display: table;
+  width: 300px;
+  padding: 10px;
+}
+.nav-item {
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+.sidebar .sidebar-item:hover,
+.sidebar .sidebar-item-active:hover {
+  background: #dee1fd;
+}
+nav:hover {
+  width: 280px;
+  transition: all 0.5s ease;
+}
+.content {
+  text-align: center;
+  flex: 1 1 0;
+  padding: 2rem;
+}
