@@ -3,63 +3,111 @@
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Art Young</title>
-      <link title="mainStyle" rel="stylesheet" href="style.css" />
+      <title>Projects</title>
+      <link title="mainStyle" rel="stylesheet" href="style1.css" />
       <link title="font-style" rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
     </head>
 
     <body>
       <div class="app">
-        <aside>
-          <nav class="sidebar">
-            <ul>
-              <li>
-                <a href="index.html" id="home-nav" class="sidebar-item-active">
-                  <img src="./images/temp-icon.png" alt="" />
-                  <span class="nav-item">Art Young</span>
-                </a>
-              </li>
-              <li>
-                <a href="projects.html" id="projects-nav" class="sidebar-item">
-                  <img src="./images/temp-icon.png" alt="" />
-                  <span class="nav-item">Projects</span>
-                </a>
-              </li>
-              <li>
-                <a href="resume.html" id="resume-nav" class="sidebar-item">
-                  <img src="./images/temp-icon.png" alt="" />
-                  <span class="nav-item">Resume/CV</span>
-                </a>
-              </li>
-              <li>
-                <a href="community.html" id="community-nav" class="sidebar-item">
-                  <img src="./images/temp-icon.png" alt="" />
-                  <span class="nav-item">Community</span>
-                </a>
-              </li>
-              <li>
-                <a href="chatgpt.html" id="chatgpt-nav" class="sidebar-item">
-                  <img src="./images/temp-icon.png" alt="" />
-                  <span class="nav-item">ChatGPT</span>
-                </a>
-              </li>
-              <li>
-                <a href="./personal-website-HTMLONLY/index.html" id="html-only-nav" class="sidebar-item">
-                  <img src="../images/temp-icon.png" alt="" />
-                  <span class="nav-item">HTML Only View</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </aside>
-        
         <main class="content">
-          <h1>Page</h1>
-          <p>
-            Project information goes here on this page.
-          </p>
+          <div class="content-background">
+            <h1>Projects</h1>
+            <h2 class="project-label">Virtual Vending Machine - Java</h2>
+            <p class="project-description">
+              This project focused on the introduction of Java and JavaFX technologies. The 
+              application simulates core functions of of a standard vending machine. 
+              Supported operations include purchase and restocking with features like seeing 
+              the the number of items remaining. Building this project was my first well 
+              fleshed out application with proper documentation.
+              <br>
+              <br>
+              <a href="https://github.com/atsubyo" target="_blank">Vending Machine</a>
+            </p>
+            <h2 class="project-label">STL Libraries - C++</h2>
+            <p class="project-description">
+              A deep exploration on C++'s standard libraries and their inner workings. This 
+              involved rewrites of all the essential data structures such as std::string, 
+              std::vectors, std::list, std::stack, std::queue, and std::unordered_map. This 
+              also involved the introduction of concepts like time complexity, rule of five, 
+              and memory management.
+              <br>
+              <br>
+              <a href="https://github.com/atsubyo" target="_blank">STL Rewrite</a>
+            </p>
+            <h2 class="project-label">Groceries List App - ReactJS</h2>
+            <p class="project-description">
+              Web application that offers users a groceries list manager. The app 
+              includes essential functionalities such as creating, updating, and deleting 
+              list items. The UI is created in such a way to make the user experience as 
+              efficient and comforting as possible by providing straightforward and easy to 
+              access input methods as well as a search item ability should the user ever 
+              need one. The list is always auto-saved when changes are made for the users' 
+              convenience. Additionally, error handling messages are included for any 
+              possible bugs.
+              <br>
+              <br>
+              <a href="https://github.com/atsubyo" target="_blank">Groceries List</a>
+            </p>
+            <h2 class="project-label">Discord Clone - C#</h2>
+            <p class="project-description">
+              Desktop application that was created with the intent of mimicking discord 
+              app's core functionalities. These features include direct messaging, private 
+              group messaging, and community/personal servers. Other accessibility features 
+              included member lists for chats and convenient message and server scroll 
+              lists. A database is used to allow for communication between unique devices.
+              <br>
+              <br>
+              <a href="https://github.com/atsubyo" target="_blank">Discord Clone</a>
+            </p>
+            <h2 class="project-label">Friends Manager - Ruby on Rails</h2>
+            <p class="project-description">
+              Web application that allows individual users to create and manage a personal 
+              friends or contacts list which can hold information like their name, phone 
+              number, and email. The app is made functional with the employment of the 
+              SQLite database. This was my first solo full stack development.
+              <br>
+              <br>
+              <a href="https://github.com/atsubyo" target="_blank">Friends Manager</a>
+            </p>
+          </div>
         </main>
+
+        <nav class="sidebar">
+          <ul>
+            <li>
+              <a href="index.html" title="Home" id="home-nav" class="sidebar-item" onclick="changePage(id, title, href)">
+                <img src="./images/temp-icon.png" alt="" />
+                <span class="nav-item">Art Young</span>
+              </a>
+            </li>
+            <li>
+              <a href="projects.html" title="Projects" id="projects-nav" class="sidebar-item-active" onclick="return false">
+                <img src="./images/temp-icon.png" alt="" />
+                <span class="nav-item">Projects</span>
+              </a>
+            </li>
+            <li>
+              <a href="resume.html" title="Resume" id="resume-nav" class="sidebar-item" onclick="changePage(id, title, href)">
+                <img src="./images/temp-icon.png" alt="" />
+                <span class="nav-item">Resume/CV</span>
+              </a>
+            </li>
+            <li>
+              <a href="community.html" title="Community" id="community-nav" class="sidebar-item" onclick="changePage(id, title, href)">
+                <img src="./images/temp-icon.png" alt="" />
+                <span class="nav-item">Community</span>
+              </a>
+            </li>
+            <li>
+              <a href="chatgpt.html" title="ChatGPT" id="chatgpt-nav" class="sidebar-item" onclick="changePage(id, title, href)">
+                <img src="./images/temp-icon.png" alt="" />
+                <span class="nav-item">ChatGPT</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
       <script src="functions.js"></script>
     </body>

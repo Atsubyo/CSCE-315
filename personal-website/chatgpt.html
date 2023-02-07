@@ -3,63 +3,56 @@
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Art Young</title>
-      <link title="mainStyle" rel="stylesheet" href="style.css" />
+      <title>ChatGPT</title>
+      <link title="mainStyle" rel="stylesheet" href="style1.css" />
       <link title="font-style" rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
     </head>
 
     <body>
       <div class="app">
-        <aside>
-          <nav class="sidebar">
-            <ul>
-              <li>
-                <a href="index.html" id="home-nav" class="sidebar-item-active">
-                  <img src="./images/temp-icon.png" alt="" />
-                  <span class="nav-item">Art Young</span>
-                </a>
-              </li>
-              <li>
-                <a href="projects.html" id="projects-nav" class="sidebar-item">
-                  <img src="./images/temp-icon.png" alt="" />
-                  <span class="nav-item">Projects</span>
-                </a>
-              </li>
-              <li>
-                <a href="resume.html" id="resume-nav" class="sidebar-item">
-                  <img src="./images/temp-icon.png" alt="" />
-                  <span class="nav-item">Resume/CV</span>
-                </a>
-              </li>
-              <li>
-                <a href="community.html" id="community-nav" class="sidebar-item">
-                  <img src="./images/temp-icon.png" alt="" />
-                  <span class="nav-item">Community</span>
-                </a>
-              </li>
-              <li>
-                <a href="chatgpt.html" id="chatgpt-nav" class="sidebar-item">
-                  <img src="./images/temp-icon.png" alt="" />
-                  <span class="nav-item">ChatGPT</span>
-                </a>
-              </li>
-              <li>
-                <a href="./personal-website-HTMLONLY/index.html" id="html-only-nav" class="sidebar-item">
-                  <img src="./images/temp-icon.png" alt="" />
-                  <span class="nav-item">HTML Only View</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </aside>
-        
         <main class="content">
           <h1>ChatGPT</h1>
           <p>
             ChatGPT generated page goes here on this page.
           </p>
         </main>
+        
+        <nav class="sidebar">
+          <ul>
+            <li>
+              <a href="index.html" title="Home" id="home-nav" class="sidebar-item" onclick="changePage(id, title, href)">
+                <img src="./images/temp-icon.png" alt="" />
+                <span class="nav-item">Art Young</span>
+              </a>
+            </li>
+            <li>
+              <a href="projects.html" title="Projects" id="projects-nav" class="sidebar-item" onclick="changePage(id, title, href)">
+                <img src="./images/temp-icon.png" alt="" />
+                <span class="nav-item">Projects</span>
+              </a>
+            </li>
+            <li>
+              <a href="resume.html" title="Resume" id="resume-nav" class="sidebar-item" onclick="changePage(id, title, href)">
+                <img src="./images/temp-icon.png" alt="" />
+                <span class="nav-item">Resume/CV</span>
+              </a>
+            </li>
+            <li>
+              <a href="community.html" title="Community" id="community-nav" class="sidebar-item" onclick="changePage(id, title, href)">
+                <img src="./images/temp-icon.png" alt="" />
+                <span class="nav-item">Community</span>
+              </a>
+            </li>
+            <li>
+              <a href="chatgpt.html" title="ChatGPT" id="chatgpt-nav" class="sidebar-item-active" onclick="return false">
+                <img src="./images/temp-icon.png" alt="" />
+                <span class="nav-item">ChatGPT</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        
       </div>
       <script src="functions.js"></script>
     </body>
