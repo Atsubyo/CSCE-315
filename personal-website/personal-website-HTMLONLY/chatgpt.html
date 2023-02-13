@@ -3,56 +3,80 @@
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Art Young</title>
-      <!-- <link title="font-style" rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" -->
+      <title>Cooking</title>
+      <script type="text/javascript" src="../functions.js"></script>
     </head>
 
     <body>
       <div class="app">
-        <aside>
-          <nav class="sidebar">
-            <ul>
-              <li>
-                <a href="index.html" id="home-nav" class="sidebar-item-active">
-                  <img src="./images/temp-icon.png" alt="" />
-                  <span class="nav-item">Art Young</span>
-                </a>
-              </li>
-              <li>
-                <a href="projects.html" id="projects-nav" class="sidebar-item">
-                  <img src="./images/temp-icon.png" alt="" />
-                  <span class="nav-item">Projects</span>
-                </a>
-              </li>
-              <li>
-                <a href="resume.html" id="resume-nav" class="sidebar-item">
-                  <img src="./images/temp-icon.png" alt="" />
-                  <span class="nav-item">Resume/CV</span>
-                </a>
-              </li>
-              <li>
-                <a href="community.html" id="community-nav" class="sidebar-item">
-                  <img src="./images/temp-icon.png" alt="" />
-                  <span class="nav-item">Community</span>
-                </a>
-              </li>
-              <li>
-                <a href="chatgpt.html" id="chatgpt-nav" class="sidebar-item">
-                  <img src="./images/temp-icon.png" alt="" />
-                  <span class="nav-item">ChatGPT</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </aside>
-        
+        <style>
+          .app{
+            background: url("./images/background5.jpg");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+        </style>
         <main class="content">
-          <h1>ChatGPT</h1>
-          <p>
-            ChatGPT generated page goes here on this page.
-          </p>
+          <div id="cooking-bio" class="content-background">
+            <section id="why-i-love-cooking">
+              <h2>Why I Love Cooking</h2>
+              <p>Cooking has been a passion of mine for as long as I can remember. I love the creativity and experimentation involved in coming up with new recipes and perfecting old ones. It's also a great way to relax and unwind after a long day.</p>
+            </section>
+            <section id="favorite-foods">
+              <h2>My Favorite Foods</h2>
+              <p>Two of my favorite foods to cook are egg tarts and marinated meats. I love the challenge of perfecting the flaky crust of the egg tarts and the depth of flavor that marinating can add to meats. </p>
+            </section>
+            <section id="cooking-tips">
+              <h2>Cooking Tips</h2>
+              <p>Here are a few tips I have learned over the years that have helped me in the kitchen:</p>
+              <ul>
+                <li>Invest in good quality ingredients, it makes a big difference in the end result.</li>
+                <li>Take the time to properly marinate meats, it will result in more flavorful dishes.</li>
+                <li>Practice makes perfect, don't be afraid to try new recipes and make mistakes.</li>
+              </ul>
+            </section>
+            <div id="chatgpt-reference">
+              <p id="chatgpt-note">
+                This Page was written by ChatGPT. The following was the given prompt:
+              </p>
+              <p id="chatgpt-prompt">
+                Code an html page about cooking as a hobby where my favorite foods are egg tarts and marinated meats.
+              </p>
+            </div>
+          </div>
         </main>
+        
+        <nav class="navbar">
+          <ul>
+            <li>
+              <a href="index.html" title="Home" id="home-nav" class="navbar-anchor">
+                <span class="nav-item">Art Young</span>
+              </a>
+            </li>
+            <li>
+              <a href="projects.html" title="Projects" id="projects-nav" class="navbar-anchor">
+                <span class="nav-item">Projects</span>
+              </a>
+            </li>
+            <li>
+              <a href="resume.html" title="Resume" id="resume-nav" class="navbar-anchor">
+                <span class="nav-item">Resume/CV</span>
+              </a>
+            </li>
+            <li>
+              <a href="community.html" title="Community" id="community-nav" class="navbar-anchor">
+                <span class="nav-item">Community</span>
+              </a>
+            </li>
+            <li>
+              <a href="chatgpt.html" title="Cooking" id="chatgpt-nav" class="navbar-anchor-active" onclick="return false">
+                <span class="nav-item">Cooking</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </body>
   </html>

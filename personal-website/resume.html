@@ -4,62 +4,64 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>Resume/CV</title>
-      <link title="mainStyle" rel="stylesheet" href="style1.css" />
-      <link title="font-style" rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+      <link title="mainStyleSheet" rel="stylesheet" href="style1.css" />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+      <script type="text/javascript" src="functions.js"></script>
     </head>
 
     <body>
       <div class="app">
+        <style>
+          .app{
+            background: url("./images/background3.jpg");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+        </style>
         <main class="content">
-          <div class="content-background">
+          <div id="resume-content" class="content-background">
             <div>
-              <h1>Resume</h1>
+              <h1>Resume/CV</h1>
             </div>
             <div id="resume-div">
-              <button type="button" class="download-button" onclick="downloadItem()"><i class="fa fa-download"></i>Download</button>
-              <img src="./images/resume.jpg" width="800px" height="1080">
+              <a href="./pdf/College-Resume.pdf" download title="College-Resume.pdf" class="download-button"><i class="fa fa-download"></i>Download</a>
+              <img id="resume-image" src="./images/resume.jpg"/>
             </div>
           </div>
         </main>
 
-        <nav class="sidebar">
+        <nav class="navbar">
           <ul>
             <li>
-              <a href="index.html" title="Home" id="home-nav" class="sidebar-item" onclick="changePage(id, title, href)">
-                <img src="./images/temp-icon.png" alt="" />
+              <a href="index.html" title="Home" id="home-nav" class="navbar-anchor">
                 <span class="nav-item">Art Young</span>
               </a>
             </li>
             <li>
-              <a href="projects.html" title="Projects" id="projects-nav" class="sidebar-item" onclick="changePage(id, title, href)">
-                <img src="./images/temp-icon.png" alt="" />
+              <a href="projects.html" title="Projects" id="projects-nav" class="navbar-anchor">
                 <span class="nav-item">Projects</span>
               </a>
             </li>
             <li>
-              <a href="resume.html" title="Resume" id="resume-nav" class="sidebar-item-active" onclick="return false">
-                <img src="./images/temp-icon.png" alt="" />
+              <a href="resume.html" title="Resume" id="resume-nav" class="navbar-anchor-active" onclick="return false">
                 <span class="nav-item">Resume/CV</span>
               </a>
             </li>
             <li>
-              <a href="community.html" title="Community" id="community-nav" class="sidebar-item" onclick="changePage(id, title, href)">
-                <img src="./images/temp-icon.png" alt="" />
+              <a href="community.html" title="Community" id="community-nav" class="navbar-anchor">
                 <span class="nav-item">Community</span>
               </a>
             </li>
             <li>
-              <a href="chatgpt.html" title="ChatGPT" id="chatgpt-nav" class="sidebar-item" onclick="changePage(id, title, href)">
-                <img src="./images/temp-icon.png" alt="" />
-                <span class="nav-item">ChatGPT</span>
+              <a href="chatgpt.html" title="Cooking" id="chatgpt-nav" class="navbar-anchor">
+                <span class="nav-item">Cooking</span>
               </a>
             </li>
           </ul>
         </nav>
       </div>
-      <script src="functions.js"></script>
     </body>
   </html>
 </DOCTYPE>

@@ -1,95 +1,123 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Art Young</title>
-      <!-- <link title="font-style" rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" -->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Art Young</title>
+    <script type="text/javascript" src="../functions.js"></script>
     </head>
 
     <body>
       <div class="app">
-        <aside id="navbar">
-          <nav class="sidebar">
-            <ul>
-              <li>
-                <a href="index.html" id="home-nav" class="sidebar-item-active">
-                  <img src="./images/temp-icon.png" alt="" />
-                  <span class="nav-item">Art Young</span>
-                </a>
+        <style>
+          .app {
+            background: url("./images/background1.jpg");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+        </style>
+        <main id="intro-page" class="content">
+          <div id="info" class="content-background">
+            <h1 class="main-head">Contacts & Socials</h1>
+            <ul class="info-list">
+              <li id="name-item">
+                Art Young
               </li>
-              <li>
-                <a href="projects.html" id="projects-nav" class="sidebar-item">
-                  <img src="./images/temp-icon.png" alt="" />
-                  <span class="nav-item">Projects</span>
-                </a>
+              <li id="email-item">
+                <button onclick="window.location.href='mailto: art.tyoung@gmail.com';" title="Email art.tyoung@gmail.com" id="email-link">art.tyoung@tamu.edu <img src="./images/icons/email-icon2.png"></img></button>
               </li>
-              <li>
-                <a href="resume.html" id="resume-nav" class="sidebar-item">
-                  <img src="./images/temp-icon.png" alt="" />
-                  <span class="nav-item">Resume/CV</span>
-                </a>
+              <li id="phone-item">
+                <button onclick="window.location.href='tel: 8324750938';" title="Call 832-475-0938" id="phone-link">832-475-0938 <img src="./images/icons/phone-icon2.png"></img></button>
               </li>
-              <li>
-                <a href="community.html" id="community-nav" class="sidebar-item">
-                  <img src="./images/temp-icon.png" alt="" />
-                  <span class="nav-item">Community</span>
-                </a>
+              <li id="linkedin-item">  
+                <button onclick="window.open('https://www.linkedin.com/in/young-art');" title="https://www.linkedin.com/in/young-art" id="linkedin-link">LinkedIn <img src="./images/icons/linkedin-icon1.png"></img></button>
               </li>
-              <li>
-                <a href="chatgpt.html" id="chatgpt-nav" class="sidebar-item">
-                  <img src="./images/temp-icon.png" alt="" />
-                  <span class="nav-item">ChatGPT</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </aside>
-
-        <main class="content">
-          <div id="info">
-            <ul>
-              <li>
-                <span class="info-list-item">Art Young</span>
-              </li>
-              <li>
-                <span class="info-list-item">art.tyoung@tamu.edu</span>
-              </li>
-              <li>
-                <span class="info-list-item">832-475-0938</span>
-              </li>
-              <li>  
-                <a href="https://www.linkedin.com/in/young-art" target="_blank" id="linkedin-link" class="info-list-attribute">
-                  <span class="info-list-item">linkedin.com/in/young-art</span>
-                </a>
-              </li>
-              <li>  
-                <a href="https://github.com/atsubyo" target="_blank" id="linkedin-link" class="info-list-attribute">
-                  <span class="info-list-item">github.com/atsubyo</span>
-                </a>
+              <li id="github-item">
+                <button onclick="window.open('https://github.com/atsubyo', '_blank');" title="https://github.com/atsubyo" id="github-link">Github <img src="./images/icons/github-icon1.png"></img></button>
               </li>
             </ul>
           </div>
-          <div id="article">
-            <h1>Art Young</h1>
-            <p >
-              Welcome my personal website! Here you can find everything from my professional life to my personal interests. 
+          <div id="article" class="content-background">
+            <h1 class="main-head">Art Young</h1>
+            <p class="intro-para">
+              Welcome my personal website! Here you can find everything from my 
+              professional life to my personal interests. 
             </p>
-            <h2>Who Am I?</h2>
-            <p>
-              I am a sophomore at Texas A&M University in the College of Engineering majoring in Computer Science. I am currently gaining experience both as a student and a teaching assistant for Intro to Program Design. In recent years, I have gained notable experience in C++ and Python based coding as well as application development with Google's Flutter, Microsoft's .NET Framework, and ReactJS. I am a very open-minded person and I am willing to take any chance I can to meet new and inspiring people, introduce myself to new life experiences, and expand my ever-filling reservoir of knowledge. I am currently set to be an intern at JPMorgan Chase for the summer of 2023.
+            <h2 class="intro-head">Who Am I?</h2>
+            <p class="intro-para">
+              I am a sophomore at Texas A&M University in the College of Engineering 
+              majoring in Computer Science. I am currently gaining experience both as a 
+              student and a teaching assistant for Intro to Program Design. In recent 
+              years, I have gained notable experience in C++ and Python based coding as 
+              well as application development with Google's Flutter, Microsoft's .NET 
+              Framework, and ReactJS. I am a very open-minded person and I am willing to 
+              take any chance I can to meet new and inspiring people, introduce myself to 
+              new life experiences, and expand my ever-filling reservoir of knowledge. I 
+              am currently set to be an intern at JPMorgan Chase for the summer of 2023.
             </p>
-            <h2>Overview of my Work</h2>
-            <p>
-              While I have yet to commit to a single large scale project, I have participated in many small scale commitments like a semester long recreation of NeoPets, a nostalgic children’s game, a summer time intimacy with a Discord clone project, and various two week sprints on rewrites of C++ standard library data structures.
+            <h2 class="intro-head">Overview of my Work</h2>
+            <p class="intro-para">
+              While I have yet to commit to a single large scale project, I have 
+              participated in many small scale commitments like a semester long 
+              recreation of NeoPets, a nostalgic children's game, a summer time intimacy 
+              with a Discord clone project, and various two week sprints on rewrites of 
+              C++ standard library data structures.
             </p>
-            <h2>Personal Passions</h2>
-            <p>
-              Some personal passions I have include cooking and most recently, PC and keyboard building. Cooking has continued to be my fall back for interests as there is always more to learn, and beyond what already exists, there are still endless possibilities for creative expression both in its creation and presentation. PC and keyboards have been a recent development as they have some closer relation to my expected future career in addition to reserving a vast and well balanced amount of creative planning and meticulous labor.
+            <h2 class="intro-head">Personal Passions</h2>
+            <p class="intro-para">
+              Some personal passions I have include cooking and most recently, PC and 
+              keyboard building. Cooking has continued to be my fall back for interests as 
+              there is always more to learn, and beyond what already exists, there are 
+              still endless possibilities for creative expression both in its creation and 
+              presentation. PC and keyboards have been a recent development as they have 
+              some closer relation to my expected future career in addition to reserving a 
+              vast and well balanced amount of creative planning and meticulous labor.
             </p>
+            <ul id="references">
+              <li>
+                <button onclick="toggleStyleSheet()" title="Toggle CSS Style" id="toggleCSS-button" type="button">Toggle Style</button>
+              </li>
+              <li>
+                <button onclick="window.open('https://www.flaticon.com/free-icons/email', '_blank');" title="https://www.flaticon.com/free-icons/email" id="email-icon-ref">Email icons created by Those Icons - Flaticon</button>
+              </li>
+              <li>
+                <button onclick="window.open('https://www.flaticon.com/free-icons/smartphone', '_blank');" title="https://www.flaticon.com/free-icons/smartphone" id="phone-icon-ref">Smartphone icons created by Freepik - Flaticon</button>
+              </li>
+            </ul>
           </div>
         </main>
+
+        <nav class="navbar">
+          <ul>
+            <li>
+              <a href="index.html" title="Home" id="home-nav" class="navbar-anchor-active" onclick="return false">
+                <span class="nav-item">Art Young</span>
+              </a>
+            </li>
+            <li>
+              <a href="projects.html" title="Projects" id="projects-nav" class="navbar-anchor">
+                <span class="nav-item">Projects</span>
+              </a>
+            </li>
+            <li>
+              <a href="resume.html" title="Resume" id="resume-nav" class="navbar-anchor">
+                <span class="nav-item">Resume/CV</span>
+              </a>
+            </li>
+            <li>
+              <a href="community.html" title="Community" id="community-nav" class="navbar-anchor">
+                <span class="nav-item">Community</span>
+              </a>
+            </li>
+            <li>
+              <a href="chatgpt.html" title="Cooking" id="chatgpt-nav" class="navbar-anchor">
+                <span class="nav-item">Cooking</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </body>
   </html>

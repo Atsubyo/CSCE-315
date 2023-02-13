@@ -1,0 +1,128 @@
+@import url("https;//fonts.googleapis.co/css2family=Poppins:weght@400;500;600;700&dsplay=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+.navbar {
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  width: 65px;
+  overflow: hidden;
+  background-color: rgba(230, 229, 218, 0.8);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+  transition: width 0.75s ease;
+  transition-delay: 0.2s;
+}
+.navbar-anchor {
+  background-color: rgba(230, 229, 218, 0);
+  position: relative;
+  color: rgb(85, 83, 83);
+  font-size: 14px;
+  width: 300px;
+  padding: 10px;
+  display: flex;
+  transition: all 0.5s ease;
+}
+.navbar-anchor-active {
+  background: rgba(215, 219, 255, 0.5);
+  position: relative;
+  color: rgb(85, 83, 83);
+  font-size: 14px;
+  width: 300px;
+  padding: 10px;
+  display: flex;
+  transition: all 0.5s ease;
+}
+.navbar-anchor-active img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.nav-item {
+  position: relative;
+  top: 12px;
+  margin-left: 50px;
+  font-weight: bold;
+  padding: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.navbar-anchor:hover {
+  cursor: pointer;
+  background: rgba(222, 225, 253, 0.5);
+}
+nav:hover {
+  width: 280px;
+  transition: all 1s ease;
+  transition-delay: 0.2s;
+}
+.content {
+  flex: 1 1 0;
+  padding: 2rem 2rem 0rem 2rem;
+  margin-left: 65px;
+}
+#info {
+  text-align: right;
+}
+.info-list {
+  list-style-type: none;
+}
+.content-background {
+  border: none;
+  padding: 30px;
+  background-color: rgba(220, 235, 252, 0.8);
+  backdrop-filter: blur(1px);
+}
+#resume-div {
+  width: 800px;
+  height: 1080;
+}
+.download-button {
+  width: 100%;
+  background-color: rgba(229, 157, 255, 0.8);
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.download-button:hover {
+  background-color: rgba(223, 133, 255, 0.8);
+}
+h1 {
+  margin-bottom: 10px;
+}
+h2 {
+  margin-bottom: 5px;
+}
+p {
+  margin-bottom: 15px;
+}
+.info-list li button {
+  width: 100%;
+  padding: 2px;
+  text-align: right;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 17px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.info-list li button:hover {
+  background-color: rgba(206, 212, 218, 0.2);
+}
+button:hover {
+  cursor: pointer;
+}

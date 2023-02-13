@@ -4,15 +4,23 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>Projects</title>
-      <link title="mainStyle" rel="stylesheet" href="style1.css" />
-      <link title="font-style" rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+      <link title="mainStyleSheet" rel="stylesheet" href="style1.css" />
+      <script type="text/javascript" src="functions.js"></script>
     </head>
 
     <body>
       <div class="app">
+        <style>
+          .app{
+            background: url("./images/background2.jpg");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+        </style>
         <main class="content">
-          <div class="content-background">
+          <div id="project-desc" class="content-background">
             <h1>Projects</h1>
             <h2 class="project-label">Virtual Vending Machine - Java</h2>
             <p class="project-description">
@@ -20,10 +28,12 @@
               application simulates core functions of of a standard vending machine. 
               Supported operations include purchase and restocking with features like seeing 
               the the number of items remaining. Building this project was my first well 
-              fleshed out application with proper documentation.
+              fleshed out application with proper documentation. If this is something that 
+              you'd like to view, there is a full download and setup guide on the github 
+              repository for you to follow.
               <br>
               <br>
-              <a href="https://github.com/atsubyo" target="_blank">Vending Machine</a>
+              <button onclick="window.open('https://github.com/atsubyo/vending-machine', '_blank');" id="github-link"><img src="./images/icons/github-icon1.png">Vending Machine</img></button>
             </p>
             <h2 class="project-label">STL Libraries - C++</h2>
             <p class="project-description">
@@ -31,10 +41,13 @@
               involved rewrites of all the essential data structures such as std::string, 
               std::vectors, std::list, std::stack, std::queue, and std::unordered_map. This 
               also involved the introduction of concepts like time complexity, rule of five, 
-              and memory management.
+              and memory management. These implementations were done over the course of a 
+              year across two classes, CSCE 121 and CSCE 221 at Texas A&M University. No 
+              direct links to my implementations are provided for purpose of honoring the 
+              Aggie Code of Honor and Code of Conduct.
               <br>
               <br>
-              <a href="https://github.com/atsubyo" target="_blank">STL Rewrite</a>
+              <button onclick="window.open('https://github.com/atsubyo', '_blank');" id="github-link"><img src="./images/icons/github-icon1.png">STL Rewrite</img></button>
             </p>
             <h2 class="project-label">Groceries List App - ReactJS</h2>
             <p class="project-description">
@@ -48,7 +61,7 @@
               possible bugs.
               <br>
               <br>
-              <a href="https://github.com/atsubyo" target="_blank">Groceries List</a>
+              <button onclick="window.open('https://github.com/Atsubyo/Groceries-List-App', '_blank');" id="github-link"><img src="./images/icons/github-icon1.png">Groceries List</img></button>
             </p>
             <h2 class="project-label">Discord Clone - C#</h2>
             <p class="project-description">
@@ -56,60 +69,58 @@
               app's core functionalities. These features include direct messaging, private 
               group messaging, and community/personal servers. Other accessibility features 
               included member lists for chats and convenient message and server scroll 
-              lists. A database is used to allow for communication between unique devices.
+              lists. A database is used to allow for communication between unique devices. 
+              This is a work in progress that is currently on pause. Future plans include 
+              the implementations of voice and video chat as well as hopes for a live and 
+              stable release.
               <br>
               <br>
-              <a href="https://github.com/atsubyo" target="_blank">Discord Clone</a>
+              <button onclick="window.open('https://github.com/Atsubyo/DiscordClone', '_blank');" id="github-link"><img src="./images/icons/github-icon1.png">Discord Clone</img></button>
             </p>
             <h2 class="project-label">Friends Manager - Ruby on Rails</h2>
             <p class="project-description">
               Web application that allows individual users to create and manage a personal 
               friends or contacts list which can hold information like their name, phone 
               number, and email. The app is made functional with the employment of the 
-              SQLite database. This was my first solo full stack development.
+              SQLite database. This was my first solo full stack development. Ruby on Rails 
+              was chosen in particular for its simplicity and established communities.
               <br>
               <br>
-              <a href="https://github.com/atsubyo" target="_blank">Friends Manager</a>
+              <button onclick="window.open('https://github.com/Atsubyo/friends_app', '_blank');" id="github-link"><img src="./images/icons/github-icon1.png">Friends Manager</img></button>
             </p>
           </div>
         </main>
 
-        <nav class="sidebar">
+        <nav class="navbar">
           <ul>
             <li>
-              <a href="index.html" title="Home" id="home-nav" class="sidebar-item" onclick="changePage(id, title, href)">
-                <img src="./images/temp-icon.png" alt="" />
+              <a href="index.html" title="Home" id="home-nav" class="navbar-anchor">
                 <span class="nav-item">Art Young</span>
               </a>
             </li>
             <li>
-              <a href="projects.html" title="Projects" id="projects-nav" class="sidebar-item-active" onclick="return false">
-                <img src="./images/temp-icon.png" alt="" />
+              <a href="projects.html" title="Projects" id="projects-nav" class="navbar-anchor-active" onclick="return false">
                 <span class="nav-item">Projects</span>
               </a>
             </li>
             <li>
-              <a href="resume.html" title="Resume" id="resume-nav" class="sidebar-item" onclick="changePage(id, title, href)">
-                <img src="./images/temp-icon.png" alt="" />
+              <a href="resume.html" title="Resume" id="resume-nav" class="navbar-anchor">
                 <span class="nav-item">Resume/CV</span>
               </a>
             </li>
             <li>
-              <a href="community.html" title="Community" id="community-nav" class="sidebar-item" onclick="changePage(id, title, href)">
-                <img src="./images/temp-icon.png" alt="" />
+              <a href="community.html" title="Community" id="community-nav" class="navbar-anchor">
                 <span class="nav-item">Community</span>
               </a>
             </li>
             <li>
-              <a href="chatgpt.html" title="ChatGPT" id="chatgpt-nav" class="sidebar-item" onclick="changePage(id, title, href)">
-                <img src="./images/temp-icon.png" alt="" />
-                <span class="nav-item">ChatGPT</span>
+              <a href="chatgpt.html" title="Cooking" id="chatgpt-nav" class="navbar-anchor">
+                <span class="nav-item">Cooking</span>
               </a>
             </li>
           </ul>
         </nav>
       </div>
-      <script src="functions.js"></script>
     </body>
   </html>
 </DOCTYPE>
